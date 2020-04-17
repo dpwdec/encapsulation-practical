@@ -8,6 +8,7 @@ describe SecretDiary do
   
   it { is_expected.to respond_to(:entries) }
   it { is_expected.to respond_to(:add_entry).with(1).argument }
+  it { is_expected.to respond_to(:get_entries) }
   
   it "is locked" do
     expect(subject.locked).to be true
@@ -59,5 +60,9 @@ describe SecretDiary do
         expect { subject.add_entry("") }.to raise_error('diary is locked')
       end
     end
+  end
+  
+  describe "#get_entries" do
+    
   end
 end
