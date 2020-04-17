@@ -63,6 +63,10 @@ describe SecretDiary do
   end
   
   describe "#get_entries" do
-    
+    context "it is locked" do
+      it "raises error 'diary is locked'" do
+        expect { subject.get_entries }.to raise_error('diary is locked')
+      end
+    end
   end
 end
