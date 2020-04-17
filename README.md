@@ -20,7 +20,7 @@ diary --> @locked
   [x] @locked is true when diary is initialized
 lock --> [] --> locks diary
   [x] it responds to #lock
-  it errors if variable @locked is true
+  [x] it errors if variable @locked is true
   it sets @locked to true if its false
 unlock --> [] --> unlocks diary
   it responds to #unlock

@@ -9,4 +9,7 @@ class SecretDiary
   def lock
     raise 'already locked' if @locked
   end
+  
+  def unlock
+  end
 end
