@@ -17,4 +17,7 @@ class SecretDiary
     raise 'already unlocked' if !@locked
     @locked = false
   end
+  
+  def add_entry
+  end
 end
