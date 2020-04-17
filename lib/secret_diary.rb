@@ -24,5 +24,6 @@ class SecretDiary
   
   def get_entries
     raise 'diary is locked' if @locked
+    return @entries
   end
 end

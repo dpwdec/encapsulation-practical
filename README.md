@@ -15,6 +15,7 @@ When the user calls `lock` again they throw errors again.
 
 ### Tests
 
+```
 diary --> @locked
   [x] it responds to @locked
   [x] @locked is true when diary is initialized
@@ -39,4 +40,5 @@ get_entries --> [] -->
   it errors if @locked is true
   returns a type of Array
   returns the list of diary entries in the Array
+```
   

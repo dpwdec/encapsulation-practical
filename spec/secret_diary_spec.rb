@@ -68,5 +68,12 @@ describe SecretDiary do
         expect { subject.get_entries }.to raise_error('diary is locked')
       end
     end
+    
+    context "it is unlocked" do
+      it "returns an array" do
+        subject.unlock
+        expect(subject.get_entries).to be_a_kind_of(Array)
+      end
+    end
   end
 end
