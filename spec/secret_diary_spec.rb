@@ -31,5 +31,12 @@ describe SecretDiary do
         expect { subject.unlock }.to change(subject, :locked).to be false
       end
     end
+    
+    context "it is unlocked" do
+      it "raises an error 'already unlocked'" do
+        subject.unlock
+        expect { subject.unlock }.to raise_error('already unlocked')
+      end
+    end
   end
 end

@@ -12,6 +12,7 @@ class SecretDiary
   end
   
   def unlock
+    raise 'already unlocked' if !@locked
     @locked = false
   end
 end
