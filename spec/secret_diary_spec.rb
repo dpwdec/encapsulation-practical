@@ -17,4 +17,12 @@ describe SecretDiary do
       end
     end
   end
+  
+  describe "#unlock" do
+    context "it is locked" do
+      it "changes @locked to be false" do
+        expect { subject.unlock }.to change(subject, :locked).to be false
+      end
+    end
+  end
 end
