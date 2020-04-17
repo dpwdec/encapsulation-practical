@@ -56,6 +56,7 @@ describe SecretDiary do
   describe "#add_entry" do
     context "it is locked" do
       it "raises an error 'diary is locked'" do
+        expect { subject.add_entry("") }.to raise_error('diary is locked')
       end
     end
   end

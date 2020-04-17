@@ -18,6 +18,7 @@ class SecretDiary
     @locked = false
   end
   
-  def add_entry(entry)
+  def add_entry(entry)#
+    raise 'diary is locked' if @locked
   end
 end
