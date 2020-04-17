@@ -18,13 +18,16 @@ When the user calls `lock` again they throw errors again.
 diary --> @locked
   [x] it responds to @locked
   [x] @locked is true when diary is initialized
+diary --> @entries
+  it responds to @entries
+  @entries is kind of array
 lock --> [] --> locks diary
   [x] it responds to #lock
   [x] it errors if variable @locked is true
   [x] it sets @locked to true if its false
 unlock --> [] --> unlocks diary
   [x] it responds to #unlock
-  it errors if variable @locked is false
+  [x] it errors if variable @locked is false
   [x] it sets @locked to false if its true
 add_entry --> [] --> adds an entry to list of diary entries
   it responds to #add_entry with 1 argument
