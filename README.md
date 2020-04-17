@@ -21,6 +21,7 @@ diary --> @locked
 diary --> @entries
   it responds to @entries
   @entries is kind of array
+  @entries is empty
 lock --> [] --> locks diary
   [x] it responds to #lock
   [x] it errors if variable @locked is true

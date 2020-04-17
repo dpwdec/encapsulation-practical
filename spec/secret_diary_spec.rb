@@ -12,6 +12,12 @@ describe SecretDiary do
     expect(subject.locked).to be true
   end
   
+  describe "#entries" do
+    it "is a kind of Array" do
+      expect(subject.entries).to be_a_kind_of(Array)
+    end
+  end
+  
   describe "#lock" do
     context "it is locked" do
       it "raises an error 'already locked'" do

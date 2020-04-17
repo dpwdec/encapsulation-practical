@@ -5,6 +5,7 @@ class SecretDiary
   
   def initialize
     @locked = true
+    @entries = []
   end
   
   def lock
