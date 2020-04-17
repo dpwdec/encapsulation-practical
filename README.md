@@ -25,7 +25,7 @@ lock --> [] --> locks diary
 unlock --> [] --> unlocks diary
   [x] it responds to #unlock
   it errors if variable @locked is false
-  it sets @locked to false if its true
+  [x] it sets @locked to false if its true
 add_entry --> [] --> adds an entry to list of diary entries
   it responds to #add_entry with 1 argument
   it errors if @locked is true
