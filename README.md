@@ -13,8 +13,11 @@ When the user calls `unlock`, `add_entry` and `get_entries` should work as desir
 When the user calls `lock` again they throw errors again.
 ```
 
-### Method Tests
+### Tests
 
+diary --> @locked
+  it responds to @locked
+  @locked is true when diary is initialized
 lock --> [] --> locks diary
   it responds to #lock
   it errors if variable @locked is true
