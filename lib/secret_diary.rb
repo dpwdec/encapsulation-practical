@@ -18,6 +18,6 @@ class SecretDiary
     @locked = false
   end
   
-  def add_entry
+  def add_entry(entry)
   end
 end

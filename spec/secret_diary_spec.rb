@@ -7,7 +7,7 @@ describe SecretDiary do
   it { is_expected.to respond_to(:unlock) }
   
   it { is_expected.to respond_to(:entries) }
-  it { is_expected.to respond_to(:add_entry) }
+  it { is_expected.to respond_to(:add_entry).with(1).argument }
   
   it "is locked" do
     expect(subject.locked).to be true
@@ -49,6 +49,13 @@ describe SecretDiary do
       it "raises an error 'already unlocked'" do
         subject.unlock
         expect { subject.unlock }.to raise_error('already unlocked')
+      end
+    end
+  end
+  
+  describe "#add_entry" do
+    context "it is locked" do
+      it "raises an error 'diary is locked'" do
       end
     end
   end
