@@ -13,7 +13,7 @@ When the user calls `unlock`, `add_entry` and `get_entries` should work as desir
 When the user calls `lock` again they throw errors again.
 ```
 
-### Tests
+### Method Tests
 
 lock --> [] --> locks diary
   it responds to #lock
