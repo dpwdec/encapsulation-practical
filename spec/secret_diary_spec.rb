@@ -16,6 +16,10 @@ describe SecretDiary do
     it "is a kind of Array" do
       expect(subject.entries).to be_a_kind_of(Array)
     end
+    
+    it "is empty" do
+      expect(subject.entries).to be_empty
+    end
   end
   
   describe "#lock" do
