@@ -6,22 +6,11 @@ describe SecretDiary do
   it { is_expected.to respond_to(:lock) }
   it { is_expected.to respond_to(:unlock) }
   
-  it { is_expected.to respond_to(:entries) }
   it { is_expected.to respond_to(:add_entry).with(1).argument }
   it { is_expected.to respond_to(:get_entries) }
   
   it "is locked" do
     expect(subject.locked).to be true
-  end
-  
-  describe "#entries" do
-    it "is a kind of Array" do
-      expect(subject.entries).to be_a_kind_of(Array)
-    end
-    
-    it "is empty" do
-      expect(subject.entries).to be_empty
-    end
   end
   
   describe "#lock" do

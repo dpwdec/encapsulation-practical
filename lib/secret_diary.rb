@@ -1,7 +1,6 @@
 class SecretDiary
   
   attr_reader :locked
-  attr_reader :entries
   
   def initialize
     @locked = true
