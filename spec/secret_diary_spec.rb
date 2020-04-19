@@ -53,7 +53,7 @@ describe SecretDiary do
     context "it is unlocked" do
       it "adds an entry to diary" do
         subject.unlock
-        expect { subject.add_entry('Dear diary') }.to change(subject, :entries).to include('Dear diary')
+        expect { subject.add_entry('Dear diary') }.to change(subject, :get_entries).to include('Dear diary')
       end
     end
   end
