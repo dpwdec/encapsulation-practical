@@ -1,4 +1,21 @@
 # Secret Diary
+
+## How to use
+
+```
+$irb
+2.7.0 :001 > diary = SecretDiary.new
+2.7.0 :002 > diary.locker.unlock
+ => false
+2.7.0 :003 > diary.add_entry('Dear diary')
+ => ["Dear diary"]
+2.7.0 :004 > diary.get_entries
+ => ["Dear diary"]
+2.7.0 :005 > diary.locker.lock
+ => true
+```
+
+## Development
 ```
 SecretDiary
   - lock
@@ -18,7 +35,7 @@ When the user calls `lock` again they throw errors again.
 ```
 diary --> @locked
   [x] it responds to @locked
-  [x] @locked is true when diary is initialized
+  [x] @locked is true when diary is initialised
 diary --> @entries
   [x] it responds to @entries
   [x] @entries is kind of array
