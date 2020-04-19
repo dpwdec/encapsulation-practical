@@ -2,9 +2,6 @@ require 'secret_diary'
 
 describe SecretDiary do
 
-  it { is_expected.to respond_to(:add_entry).with(1).argument }
-  it { is_expected.to respond_to(:get_entries) }
-
   describe "#add_entry" do
     context "it is locked" do
       it "raises an error 'diary is locked'" do
