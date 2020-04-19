@@ -6,8 +6,12 @@ class Lock
   end
 
   def lock
+    raise 'already locked' if @locked
+    @locked = true
   end
 
   def unlock
+    raise 'already unlocked' if !@locked
+    @locked = false
   end
 end
