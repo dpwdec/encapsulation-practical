@@ -34,11 +34,10 @@ unlock --> [] --> unlocks diary
 add_entry --> [] --> adds an entry to list of diary entries
   [x] it responds to #add_entry with 1 argument
   [x] it errors if @locked is true
-  it adds an entry to list of diary entries
+  - [ ] it adds an entry to list of diary entries
 get_entries --> [] -->
-  it responds to #get_entries
-  it errors if @locked is true
-  returns a type of Array
+  - [x] it responds to #get_entries
+  - [x] it errors if @locked is true
+  - [x] returns a type of Array
   returns the list of diary entries in the Array
 ```
-  
